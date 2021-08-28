@@ -1,6 +1,5 @@
 package sorting;
 
-/Users/macbookair/.ssh/id_ed25519
 
 public class BubbleSort<T extends Comparable<T>> implements Sort<T> {
     /**
