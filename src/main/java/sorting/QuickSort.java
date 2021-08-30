@@ -14,8 +14,9 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
         if (arr == null) {
             return null;
         }
-        return quickSort(arr, 0, arr.length-1);
+        return quickSort(arr, 0, arr.length - 1);
     }
+
     private T[] quickSort(T[] arr, int lo, int high) {
 
         //If lo is greater than high, then indexes are not correct
@@ -23,9 +24,9 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
             //Partition the array to left and right based on the pivot point
             int splitPoint = partition(arr, lo, high);
             //Recursively quicksort left part of pivot
-            quickSort(arr,lo, splitPoint);
+            quickSort(arr, lo, splitPoint);
             //Recursively quicksort right part of pivot
-            quickSort(arr,splitPoint+1,high);
+            quickSort(arr, splitPoint + 1, high);
         }
         return arr;
     }
@@ -62,7 +63,7 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
         return j;
     }
 
-    private void swap(T[] arr, int i , int j) {
+    private void swap(T[] arr, int i, int j) {
         T tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
