@@ -33,7 +33,7 @@ public class MergeSort<T extends  Comparable<T>> implements  Sort<T>{
         //For managing indexes of left,right and merged array
         int i =0, l=0,r =0;
 
-        int left_size = left.length;
+        int left_size = left.length; 
         int right_size = right.length;
 
         T[] merged_array = (T[]) new Comparable[left_size + right_size];
@@ -68,7 +68,7 @@ public class MergeSort<T extends  Comparable<T>> implements  Sort<T>{
         //to merged_array which couldn't be compared.
         //Since index l could not go till right_size,
         //hence we can use it from where it was right
-        while(r<right_size) {
+        while(r< right_size) {
             merged_array[i] = right[r];
             i++;
             r++;
