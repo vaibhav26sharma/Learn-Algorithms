@@ -1,5 +1,7 @@
 package sorting;
 
+import java.lang.reflect.Array;
+
 public class QuickSort<T extends Comparable<T>> implements Sort<T> {
     /**
      * @param data - array to be sorted
@@ -12,7 +14,7 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
 
     private T[] quickSort(T[] arr) {
         if (arr == null) {
-            return null;
+            return (T[]) Array.newInstance(QuickSort.class, 0);
         }
         return quickSort(arr, 0, arr.length - 1);
     }
@@ -69,3 +71,4 @@ public class QuickSort<T extends Comparable<T>> implements Sort<T> {
         arr[j] = tmp;
     }
 }
+ 
