@@ -1,7 +1,5 @@
 package searching;
 
-import sorting.Sort;
-
 public class LinearSearch<T extends Comparable<T>> implements Search<T> {
     /**
      * @param data - array to be sorted

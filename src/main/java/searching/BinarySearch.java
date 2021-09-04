@@ -1,7 +1,5 @@
 package searching;
 
-import sorting.Sort;
-
 public class BinarySearch<T extends Comparable<T>> implements Search<T> {
 
     /**
