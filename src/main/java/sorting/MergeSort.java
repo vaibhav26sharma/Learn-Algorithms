@@ -1,6 +1,5 @@
 package sorting;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MergeSort<T extends Comparable<T>> implements Sort<T> {
