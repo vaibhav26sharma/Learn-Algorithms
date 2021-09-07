@@ -25,13 +25,13 @@ public class BinarySearch<T extends Comparable<T>> implements Search<T> {
                 return mid;
             }
 
-            //If mid element is greater than element to be searched,
+            //If middle element is greater than element to be searched,
             //run binary search on  left array i.e. array from left to mid index
             if (data[mid].compareTo(toSearch) > 0) {
                 return binarySearch(data, toSearch, left, mid - 1);
             }
 
-            //If mid element is smaller than element to be searched,
+            //If middle element is smaller than element to be searched,
             //run binary search on  right array i.e. array from mid to right index
             if (data[mid].compareTo(toSearch) < 0) {
                 return binarySearch(data, toSearch, mid + 1, right);
